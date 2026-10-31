@@ -8,23 +8,23 @@
 
   /* ---------- Data ---------- */
   var VENDORS = [
-    { id: "v1", name: "Boston Smoke Yard", cook: "Odessa Brammer, Portland", cat: "Jerk", where: "Jerk Pit Row", dishes: "Jerk pork shoulder, roast breadfruit, hard dough bread, her own pepper sauce" },
-    { id: "v2", name: "Drum and Pimento", cook: "The Clarke brothers, Spanish Town", cat: "Jerk", where: "Jerk Pit Row", dishes: "Quarter jerk chicken, festival, pimento roasted yam" },
-    { id: "v3", name: "Uncle Fitz Jerk Centre", cook: "Fitzroy Bailey, Half Way Tree", cat: "Jerk", where: "Jerk Pit Row", dishes: "Jerk sausage, jerk chicken wings, roast corn with scallion butter" },
-    { id: "v4", name: "Cedar Valley Smokehouse", cook: "Marcia and Desmond Powell, St Thomas", cat: "Jerk", where: "Jerk Pit Row", dishes: "Smoked jerk goat, pumpkin rice, cucumber and pepper pickle" },
-    { id: "v5", name: "Old Harbour Catch", cook: "Kemar Lyttle, Old Harbour Bay", cat: "Seafood", where: "Seafood Walk", dishes: "Escovitch snapper, bammy, fried sprat by the bag" },
-    { id: "v6", name: "Lobster Pot Lime", cook: "Simone Gayle, Port Royal", cat: "Seafood", where: "Seafood Walk", dishes: "Curried lobster, garlic butter shrimp, steamed fish with okra" },
-    { id: "v7", name: "Pepper Shrimp Lady", cook: "Miss Pearline, Middle Quarters", cat: "Seafood", where: "Seafood Walk", dishes: "Hot pepper shrimp by the bag, the same recipe since 1979" },
-    { id: "v8", name: "Run Dung Kitchen", cook: "Trevor Facey, Kingston", cat: "Seafood", where: "Seafood Walk", dishes: "Mackerel rundown, ackee and saltfish fritters, boiled green banana" },
-    { id: "v9", name: "Ital Garden Kitchen", cook: "Imani Tafari, St Thomas", cat: "Ital", where: "Ital Grove", dishes: "Coconut rundown with callaloo, steamed cabbage, ground provisions" },
-    { id: "v10", name: "Roots and Calabash", cook: "Brother Ras Kebra, Bull Bay", cat: "Ital", where: "Ital Grove", dishes: "Ital stew in a calabash, jerk tofu, sky juice with lime" },
-    { id: "v11", name: "Green Fig Stand", cook: "Tamika Reid, Mandeville", cat: "Ital", where: "Ital Grove", dishes: "Plantain tarts, ackee and callaloo patties, bammy with avocado" },
-    { id: "v12", name: "Gizzada and Grater Cake", cook: "Miss Ivy Henry, Linstead", cat: "Sweets", where: "Sweets Lane", dishes: "Gizzada, grater cake, coconut drops wrapped in brown paper" },
-    { id: "v13", name: "Blackwood Bakery", cook: "Andre Blackwood, Mona", cat: "Sweets", where: "Sweets Lane", dishes: "Rum soaked Christmas cake by the slice, sweet potato pudding" },
-    { id: "v14", name: "Devon Cream Parlour", cook: "The Morrison family, Ocho Rios", cat: "Sweets", where: "Sweets Lane", dishes: "Grapenut ice cream, sorrel sorbet, rum and raisin cones" },
-    { id: "v15", name: "The Overproof Library", cook: "Paulette Gordon, Clarendon", cat: "Drinks", where: "Rum Tent", dishes: "Flights of aged and overproof rum, rum punch by the jug" },
-    { id: "v16", name: "Sorrel House", cook: "Grace Whyte, Linstead", cat: "Drinks", where: "Rum Tent", dishes: "Sorrel with ginger and pimento, with rum or without, by the bottle" },
-    { id: "v17", name: "Irish Moss Bar", cook: "Leroy Samuels, Kingston", cat: "Drinks", where: "Sweets Lane", dishes: "Irish moss with peanut and nutmeg, carrot juice, coconut water from the shell" }
+    { id: "v1", photo: "1621790404813-df280c2de418", alt: "Pork cooking slowly over a charcoal grill", name: "Boston Smoke Yard", cook: "Delroy Brammer, Portland", cat: "Jerk", where: "Jerk Pit Row", dishes: "Jerk pork shoulder, roast breadfruit, hard dough bread, his own pepper sauce" },
+    { id: "v2", photo: "1560358371-8460bf45a844", alt: "A cook turning chicken on an outdoor grill", name: "Drum and Pimento", cook: "The Clarke brothers, Spanish Town", cat: "Jerk", where: "Jerk Pit Row", dishes: "Quarter jerk chicken, festival, pimento roasted yam" },
+    { id: "v3", photo: "1605908580297-f3e1c02e64ff", alt: "Jerk chicken and sausage charring on a black grill", name: "Uncle Fitz Jerk Centre", cook: "Fitzroy Bailey, Half Way Tree", cat: "Jerk", where: "Jerk Pit Row", dishes: "Jerk sausage, jerk chicken wings, roast corn with scallion butter" },
+    { id: "v4", photo: "1592011432621-f7f576f44484", crop: "bottom", alt: "Smoked meat resting on the grill bars", name: "Cedar Valley Smokehouse", cook: "Marcia and Desmond Powell, St Thomas", cat: "Jerk", where: "Jerk Pit Row", dishes: "Smoked jerk goat, pumpkin rice, cucumber and pepper pickle" },
+    { id: "v5", photo: "1632852576480-c10a8e19496a", alt: "A plate of fried fish and sides, close up", name: "Old Harbour Catch", cook: "Kemar Lyttle, Old Harbour Bay", cat: "Seafood", where: "Seafood Walk", dishes: "Escovitch snapper, bammy, fried sprat by the bag" },
+    { id: "v6", photo: "1663530761401-15eefb544889", alt: "A cook spooning sauce over a plated dish", name: "Lobster Pot Lime", cook: "Simone Gayle, Port Royal", cat: "Seafood", where: "Seafood Walk", dishes: "Curried lobster, garlic butter shrimp, steamed fish with okra" },
+    { id: "v7", photo: "1632852576480-c10a8e19496a", crop: "entropy", alt: "Pepper shrimp and bread on a plate, close up", name: "Pepper Shrimp Lady", cook: "Miss Pearline, Middle Quarters", cat: "Seafood", where: "Seafood Walk", dishes: "Hot pepper shrimp by the bag, the same recipe since 1979" },
+    { id: "v8", photo: "1720630351938-1233133223f4", alt: "A man cooking at a busy stove", name: "Run Dung Kitchen", cook: "Trevor Facey, Kingston", cat: "Seafood", where: "Seafood Walk", dishes: "Mackerel rundown, ackee and saltfish fritters, boiled green banana" },
+    { id: "v9", photo: "1779315375132-3a218587d64b", crop: "entropy", alt: "Imani Tafari's table of traditional food", name: "Ital Garden Kitchen", cook: "Imani Tafari, St Thomas", cat: "Ital", where: "Ital Grove", dishes: "Coconut rundown with callaloo, steamed cabbage, ground provisions" },
+    { id: "v10", photo: "1610851467843-fe4a65aea9c0", alt: "A cook in a red shirt at his stall", name: "Roots and Calabash", cook: "Brother Ras Kebra, Bull Bay", cat: "Ital", where: "Ital Grove", dishes: "Ital stew in a calabash, jerk tofu, sky juice with lime" },
+    { id: "v11", photo: "1788530757669-417558f26bef", alt: "Slices of ripe plantain, fried golden", name: "Green Fig Stand", cook: "Tamika Reid, Mandeville", cat: "Ital", where: "Ital Grove", dishes: "Plantain tarts, ackee and callaloo patties, bammy with avocado" },
+    { id: "v12", photo: "1641529148223-093a513ed44e", alt: "Sweet dough frying golden in a pot of oil", name: "Gizzada and Grater Cake", cook: "Miss Ivy Henry, Linstead", cat: "Sweets", where: "Sweets Lane", dishes: "Gizzada, grater cake, coconut drops wrapped in brown paper" },
+    { id: "v13", photo: "1514362545857-3bc16c4c7d1b", alt: "A tumbler of dark rum on a wooden table, for the Christmas cake", name: "Blackwood Bakery", cook: "Andre Blackwood, Mona", cat: "Sweets", where: "Sweets Lane", dishes: "Rum soaked Christmas cake by the slice, sweet potato pudding" },
+    { id: "v14", photo: "1765118527329-6ed7fa0d10ac", alt: "A glass mug of something cold and deep red", name: "Devon Cream Parlour", cook: "The Morrison family, Ocho Rios", cat: "Sweets", where: "Sweets Lane", dishes: "Grapenut ice cream, sorrel sorbet, rum and raisin cones" },
+    { id: "v15", photo: "1621873495884-845a939892d1", alt: "A glass of aged rum, amber against the light", name: "The Overproof Library", cook: "Paulette Gordon, Clarendon", cat: "Drinks", where: "Rum Tent", dishes: "Flights of aged and overproof rum, rum punch by the jug" },
+    { id: "v16", photo: "1566851723089-bf4a4bf23e96", alt: "Fresh sorrel flowers, the hibiscus that makes the drink", name: "Sorrel House", cook: "Grace Whyte, Linstead", cat: "Drinks", where: "Rum Tent", dishes: "Sorrel with ginger and pimento, with rum or without, by the bottle" },
+    { id: "v17", photo: "1777303457307-4cf339a800ac", alt: "A street vendor with a cart of cold drinks", name: "Irish Moss Bar", cook: "Leroy Samuels, Kingston", cat: "Drinks", where: "Sweets Lane", dishes: "Irish moss with peanut and nutmeg, carrot juice, coconut water from the shell" }
   ];
 
   window.SS_VENDORS = VENDORS;
@@ -62,8 +62,18 @@
   var filterBtns = document.querySelectorAll(".filter");
   var activeCat = "all";
 
+  function photoUrl(v, w) {
+    return "https://images.unsplash.com/photo-" + v.photo + "?auto=format&fit=crop&w=" + w + "&h=" + Math.round(w * .75) + "&q=80" + (v.crop ? "&crop=" + v.crop : "");
+  }
+  function photo(v) {
+    if (!v.photo) return "";
+    return '<figure class="ph v-photo"><span class="ph-frame"><img src="' + esc(photoUrl(v, 480)) + '" srcset="' + esc(photoUrl(v, 480)) + ' 480w, ' + esc(photoUrl(v, 960)) + ' 960w"' +
+      ' sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 400px" width="480" height="360" alt="' + esc(v.alt) + '" loading="lazy" decoding="async"></span></figure>';
+  }
+
   list.innerHTML = VENDORS.map(function (v) {
     return '<li class="vendor" data-id="' + v.id + '" data-cat="' + v.cat + '">' +
+      photo(v) +
       '<p class="v-cat">' + v.cat + '</p>' +
       '<h3>' + esc(v.name) + '</h3>' +
       '<p class="v-cook">' + esc(v.cook) + '</p>' +
@@ -179,19 +189,31 @@
     var b = e.target.closest(".plan-add");
     if (!b) return;
     var id = b.dataset.plan;
-    if (plan.has(id)) plan.delete(id); else plan.add(id);
-    savePlan(); renderPlan();
+    var adding = !plan.has(id);
+    if (adding) plan.add(id); else plan.delete(id);
+    savePlan(); renderPlan(); announce(id, adding, b);
   });
   document.querySelector(".planner-pick").addEventListener("change", function (e) {
     if (e.target.type !== "checkbox") return;
     if (e.target.checked) plan.add(e.target.value); else plan.delete(e.target.value);
-    savePlan(); renderPlan();
+    savePlan(); renderPlan(); announce(e.target.value, e.target.checked, e.target.closest(".pick"));
   });
   document.getElementById("clear-plan").addEventListener("click", function () {
-    plan.clear(); savePlan(); renderPlan();
+    plan.clear(); savePlan(); renderPlan(); announce(null, false, null);
   });
+  /* Tell the paper bag (moments.js) what changed */
+  function labelFor(id) {
+    var s = SESSIONS.find(function (x) { return x.id === id; });
+    if (s) return s.name;
+    var v = VENDORS.find(function (x) { return x.id === id; });
+    return v ? v.name : "";
+  }
+  function announce(id, added, from) {
+    document.dispatchEvent(new CustomEvent("ss:plan", { detail: { size: plan.size, added: added, label: id ? labelFor(id) : "", from: from } }));
+  }
   printBtn.addEventListener("click", function () { window.print(); });
   renderPlan();
+  announce(null, false, null);
 
   /* ---------- Booking form ---------- */
   var form = document.getElementById("booking-form");

@@ -36,12 +36,19 @@
     });
     L.control.zoom({ position: "bottomright" }).addTo(map);
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", {
-      subdomains: "abcd", maxZoom: 19, className: "ss-tiles"
+    var street = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19, className: "ss-tiles", attribution: "OpenStreetMap"
     }).addTo(map);
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png", {
-      subdomains: "abcd", maxZoom: 19, className: "ss-labels", pane: "shadowPane"
-    }).addTo(map);
+    var sat = L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}", {
+      maxZoom: 19, className: "ss-sat", attribution: "Esri"
+    });
+    var viewBtn = fig.querySelector('[data-map="view"]');
+    if (viewBtn) viewBtn.addEventListener("click", function () {
+      var toSat = map.hasLayer(street);
+      if (toSat) { map.removeLayer(street); sat.addTo(map); } else { map.removeLayer(sat); street.addTo(map); }
+      viewBtn.textContent = toSat ? "Street view" : "Satellite view";
+      fig.classList.toggle("is-sat", toSat);
+    });
 
     /* festival grounds and walking loop */
     L.polygon([[18.0193, -76.7532], [18.0262, -76.7532], [18.0266, -76.7455], [18.0200, -76.7450], [18.0190, -76.7500]], {
