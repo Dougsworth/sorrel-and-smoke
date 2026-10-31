@@ -462,10 +462,19 @@
   <div class="wrap">
     <div class="section-head">
       <h2 id="loc-title" class="display-l">Getting there</h2>
-      <p class="lede">Hope Gardens, Old Hope Road, Kingston 6. Enter at the main gate on Old Hope Road. The map is not to scale but it will get you to the jerk.</p>
+      <p class="lede">Hope Gardens, Old Hope Road, Kingston 6. Enter at the main gate on Old Hope Road. Tap a letter on the map or in the list to see what is there.</p>
     </div>
     <div class="loc-grid">
       <figure class="map">
+        <div class="map-tools" role="group" aria-label="Map controls">
+          <button type="button" class="link-under" data-map="all">Whole festival</button>
+          <button type="button" class="link-under" data-map="shuttle">Shuttle stops</button>
+          <button type="button" class="link-under" data-map="me">How far am I</button>
+          <a class="link-under" href="https://www.google.com/maps/dir/?api=1&amp;destination=18.0197,-76.7508&amp;travelmode=driving" target="_blank" rel="noopener">Directions to the gate</a>
+        </div>
+        <div class="garden-map" id="garden-map" role="region" aria-label="Interactive map of the festival at Hope Gardens"></div>
+        <p class="map-status" id="map-status" aria-live="polite"></p>
+        <div class="map-fallback">
         <svg viewBox="0 -28 800 596" role="img" aria-labelledby="map-title map-desc">
           <title id="map-title">Festival map of Hope Gardens</title>
           <desc id="map-desc">The main gate is on Old Hope Road at the bottom of the map. Jerk Pit Row runs up the left side, Seafood Walk and the demo kitchen sit in the middle, the Ital Grove is top left, Sweets Lane and the Rum Tent are on the right, the bandstand is at the centre and the Sunset Lawn faces the hills at the top.</desc>
@@ -518,19 +527,21 @@
           <path class="m-north" d="M752 470v-34l-8 12M752 436l8 12"/>
           <text class="m-n" x="752" y="490">N</text>
         </svg>
-        <figcaption>Not to scale. Water stations at every lettered point.</figcaption>
+        
+      </div>
+        <figcaption>Real map of Hope Gardens. Stall positions are approximate. Map data &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, tiles &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>.</figcaption>
       </figure>
       <div class="loc-info">
         <ol class="legend">
-          <li><b>A</b>Main gate, wristbands and coffee</li>
-          <li><b>B</b>Jerk Pit Row</li>
-          <li><b>C</b>Seafood Walk and the demo kitchen</li>
-          <li><b>D</b>Ital Grove</li>
-          <li><b>E</b>Sweets Lane</li>
-          <li><b>F</b>Rum Tent</li>
-          <li><b>G</b>The bandstand</li>
-          <li><b>H</b>Sunset Lawn</li>
-          <li><b>I</b>Family Garden and first aid</li>
+          <li><button type="button" class="pt" data-pt="A"><b>A</b><span>Main gate, wristbands and coffee</span></button></li>
+          <li><button type="button" class="pt" data-pt="B"><b>B</b><span>Jerk Pit Row</span></button></li>
+          <li><button type="button" class="pt" data-pt="C"><b>C</b><span>Seafood Walk and the demo kitchen</span></button></li>
+          <li><button type="button" class="pt" data-pt="D"><b>D</b><span>Ital Grove</span></button></li>
+          <li><button type="button" class="pt" data-pt="E"><b>E</b><span>Sweets Lane</span></button></li>
+          <li><button type="button" class="pt" data-pt="F"><b>F</b><span>Rum Tent</span></button></li>
+          <li><button type="button" class="pt" data-pt="G"><b>G</b><span>The bandstand</span></button></li>
+          <li><button type="button" class="pt" data-pt="H"><b>H</b><span>Sunset Lawn</span></button></li>
+          <li><button type="button" class="pt" data-pt="I"><b>I</b><span>Family Garden and first aid</span></button></li>
         </ol>
         <div class="travel">
           <h3>By shuttle</h3>
@@ -602,6 +613,9 @@
   </div>
 </footer>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/map.js" defer></script>
 </body>
 </html>

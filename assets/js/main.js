@@ -27,6 +27,7 @@
     { id: "v17", name: "Irish Moss Bar", cook: "Leroy Samuels, Kingston", cat: "Drinks", where: "Sweets Lane", dishes: "Irish moss with peanut and nutmeg, carrot juice, coconut water from the shell" }
   ];
 
+  window.SS_VENDORS = VENDORS;
   var SESSIONS = [];
   document.querySelectorAll(".t-item").forEach(function (li) {
     SESSIONS.push({
